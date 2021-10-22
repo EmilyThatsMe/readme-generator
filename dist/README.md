@@ -1,33 +1,37 @@
 # Readme Generator
-  
-
-  ## Github URL
-  [EmilyThatsMe] (https://github.com/EmilyThatsMe/)
+  ![GitHub license](https://img.shields.io/badge/license-MIT-yellowgreen.svg)
 
   ## Description
-  Generates a new readme after receiving input from user
+  This application generates a readme file based on user input 
 
   ## Table of Contents
-  * Installation
-  * Contributors
-  * Usage
-  * Test
-  * License
+  * [Installation](#Installation)
+  * [Contributors](#Contributors)
+  * [Usage](#Usage)
+  * [Test](#Test)
+  * [License](#License)
 
 
 
   ## Installation
-  Go to emilythatsme.github.io to find the readme generator and clone the repository to your local computer
+  Go to the repository on github and clone the repository to you local computer
+
+  ## Usage
+  Run the application on the command line using the command "node index". Answer the questions you are prompted to answer. Once finished with the questions it will generate a readme file in the dist/ folder
 
   ## Contributors
   Emily Thon
 
   ## Tests
   To run tests, run these commands:
-  npm test
+  npm run test
 
-
+  ## License
   ## License 📛
-    Copyright © None. All rights reserved. 
+    Copyright © MIT. All rights reserved. 
     
-    Licensed under the None license.
+    Licensed under the MIT license.
+
+  ## Questions
+  * Github repository: EmilyThatsMe (https://github.com/EmilyThatsMe/)
+  * If you have further questions, contact me at emilthon@hotmail.com
