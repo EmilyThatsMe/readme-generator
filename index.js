@@ -13,11 +13,6 @@ const questions = [
     },
     {
         type: 'input',
-        name: 'email',
-        message: "What's your e-mail?"
-    },
-    {
-        type: 'input',
         name: 'title',
         message: "What's the name of your project?"
     },
@@ -57,14 +52,22 @@ const questions = [
 ];
 
 // TODO: Create a function to write README file
-function writeToFile(fileName, data) {}
+function writeToFile(fileName, data) {
+    fs.writeFile(fileName, data, err => {
+        if (err) {
+          return console.log(err);
+        }
+      
+        console.log("Success! Your README.md file has been generated")
+    });
+}
+
 
 // TODO: Create a function to initialize app
 function init() {
     inquirer.prompt(questions)
         .then((inquirerAnswers) => {
-            console.log("Generating.... Please wait....");
-            writeToFile("./dist/README.md", generateMarkdown({ ...inquirerAnswers }));
+            writeToFile("./dist/README.md", generateMarkdown(inquirerAnswers));
         })
 }
 
